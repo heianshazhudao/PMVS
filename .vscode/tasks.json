@@ -1,0 +1,33 @@
+{
+// 有关 tasks.json 格式的文档，请参见
+    // https://go.microsoft.com/fwlink/?LinkId=733558
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "task g++",
+            "command": "D:\\workspace\\enviroment\\mingw64\\bin\\g++.exe",
+            "args": [
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe",
+                "D:\\workspace\\enviroment\\opencv\\opencv\\build\\x64\\MinGW\\install\\x64\\mingw\\bin\\libopencv_world455.dll",
+                "-I",
+                "D:\\workspace\\enviroment\\opencv\\opencv\\build\\x64\\MinGW\\install\\include",
+                "-I",
+                "D:\\workspace\\enviroment\\opencv\\opencv\\build\\x64\\MinGW\\install\\include\\opencv2"
+            ],
+            "options": {
+                "cwd": "D:\\workspace\\enviroment\\mingw64\\bin"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}

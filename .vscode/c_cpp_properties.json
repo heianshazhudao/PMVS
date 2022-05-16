@@ -1,0 +1,18 @@
+{
+    "configurations": [
+        {
+            "name": "win",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "D:\\workspace\\enviroment\\opencv\\opencv\\build\\x64\\MinGW\\install\\include",
+                "D:\\workspace\\enviroment\\opencv\\opencv\\build\\x64\\MinGW\\install\\include\\opencv2"
+            ],
+            "defines": [],
+            "compilerPath": "D:\\workspace\\enviroment\\mingw64\\bin\\g++.exe",
+            "intelliSenseMode": "${default}",
+            "cStandard": "c11",
+            "cppStandard": "c++17"
+        }
+    ],
+    "version": 4
+}
