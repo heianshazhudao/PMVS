@@ -56,12 +56,13 @@ void KeyPoints::saveTo(const string&filename)
                     ofs<<descriptor.at<float>(0,k)<<endl;
                 else
                 {
-                    ofs<<descriptor.at<flaot>(0,k)<<" ";
+                    ofs<<descriptor.at<float>(0,k)<<" ";
                 }
                 
                 
             }
         }
     }
+    ofs.close();
 }
 

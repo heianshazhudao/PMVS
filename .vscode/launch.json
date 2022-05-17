@@ -9,7 +9,12 @@
             "type": "cppdbg",
             "request": "launch",
             "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
-            "args": [],
+            "args": [
+                "sparse sift",
+                "D:\\workspace\\code\\temple\\temple",
+                "D:\\workspace\\code\\temple\\temple",
+                "D:\\workspace\\code\\temple\\temple\\temple_keypoints.txt"   
+                ],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
             "environment": [],

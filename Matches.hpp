@@ -8,7 +8,7 @@ class Matches
 {
     
     private:
-    void pariwiseMatch(const vector<KeyPoint>&keypoints1,const vector<KeyPoint>&keypoints2,const Mat&descriptors1,const Mat&descriptors2,vector<DMatch> matches);
+    void pairwiseMatch(const vector<KeyPoint>&keypoints1,const vector<KeyPoint>&keypoints2,const Mat&descriptors1,const Mat&descriptors2,vector<DMatch> matches);
     vector<vector<DMatch>> matchesTable;
     
     public:

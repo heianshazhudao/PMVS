@@ -3,6 +3,7 @@
 #include<opencv2/opencv.hpp>
 #include"Feature.hpp"
 #include<fstream>
+#include"Matches.hpp"
 using namespace cv;
 using namespace std;
 //特征点在所有图像中的轨迹
@@ -40,11 +41,13 @@ class TrackList
     //所有轨迹 
     vector<Track> tracks;
     public:
-    TrackList(const vector<Mat> &images);
+    TrackList(const KeyPoints&keypoints,const Matches&matches);
+    TrackList(const string&filename);
     //三角化
     void triangulate(const vector<Mat>&pmats);
     void getColor(const vector<Mat>&images);
     //保存点云文件
     void save2ply(const string&filename);
+    void saveTo(const string&filename);
     friend ostream&operator<<(ostream&os,const TrackList&tracklist);
 };
