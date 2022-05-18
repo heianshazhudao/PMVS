@@ -1,16 +1,21 @@
 #include"KeyPoints.hpp"
-#include<fstream>
 
 KeyPoints::KeyPoints(const vector<Mat>&images):
                     keypointsVec(images.size(),
                     vector<KeyPoint>()),DescriptorVec(images.size(),Mat())
 {
-    SIFT sift;
+    Ptr<SIFT> sift=SIFT::create();
     for(int i=0;i<images.size();i++)
     {
         cout<<"计算视图"<<i<<"的特征点,"<<endl;
-        sift(images[i],Mat(),keypointsVec[i],DescriptorVec[i]);
+        sift->detect(images[i],keypointsVec[i],Mat());
+        sift->compute(images[i],keypointsVec[i],DescriptorVec[i]);
         cout<<"特征点共有"<<keypointsVec[i].size()<<"个"<<endl;
+        Mat img_keypoints;
+        drawKeypoints(images[i],keypointsVec[i],
+            img_keypoints,Scalar::all(-1),DrawMatchesFlags::DEFAULT);
+        waitKey(1000);
+        destroyAllWindows();
     }
 }
 

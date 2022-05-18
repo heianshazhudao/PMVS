@@ -1,5 +1,4 @@
 #include"ImageSet.hpp"
-#include"io.h"
 
 using namespace std;
 using namespace cv;

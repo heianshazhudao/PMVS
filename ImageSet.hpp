@@ -1,14 +1,12 @@
-#include<iostream>
-#include<opencv2/opencv.hpp>
-#include"global.h"
-#include<fstream>
+#pragma once
+#include"global.hpp"
 using namespace std;
 using namespace cv;
 
 class ImageSet
 {
-    
     public:
+
     ImageSet(const string&imageDir,const string&parDir);
     vector<Mat> images;
     vector<string> imageNames;

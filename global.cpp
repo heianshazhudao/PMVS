@@ -1,4 +1,4 @@
-#include"global.h"
+#include"global.hpp"
 
 
 vector<Mat> getAllImages(const string&imageDir)
@@ -41,7 +41,8 @@ vector<Mat> getAllImages(const string&imageDir)
     {
         imageSet.push_back(imread(fn));
         imshow(fn,imageSet[imageSet.size()-1]);
-        waitKey(10);
+        waitKey(1000);
+        destroyAllWindows();
     }
     return imageSet;
 }

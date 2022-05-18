@@ -16,7 +16,9 @@
                 "-I",
                 "D:\\workspace\\enviroment\\opencv\\opencv\\build\\x64\\MinGW\\install\\include",
                 "-I",
-                "D:\\workspace\\enviroment\\opencv\\opencv\\build\\x64\\MinGW\\install\\include\\opencv2"
+                "D:\\workspace\\enviroment\\opencv\\opencv\\build\\x64\\MinGW\\install\\include\\opencv2",
+                "-L",
+                "D:\\workspace\\enviroment\\opencv\\opencv\\build\\x64\\MinGW\\lib"
             ],
             "options": {
                 "cwd": "D:\\workspace\\enviroment\\mingw64\\bin"

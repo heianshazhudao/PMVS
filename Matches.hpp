@@ -1,5 +1,5 @@
-#include<iostream>
-#include<opencv2/opencv.hpp>
+#pragma once
+#include"global.hpp"
 #include"KeyPoints.hpp"
 using namespace std;
 using namespace cv;

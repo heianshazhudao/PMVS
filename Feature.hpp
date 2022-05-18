@@ -1,5 +1,5 @@
-#include<iostream>
-#include<opencv2/features2d.hpp>
+#pragma once
+#include"global.hpp"
 
 //图像中的特征点
 class Feature
