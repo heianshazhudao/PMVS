@@ -1,8 +1,6 @@
-#include<iostream>
-#include<vector>
-#include<opencv2/opencv.hpp>
+#pragma once
+#include"global.hpp"
 #include"Feature.hpp"
-#include<fstream>
 #include"Matches.hpp"
 using namespace cv;
 using namespace std;

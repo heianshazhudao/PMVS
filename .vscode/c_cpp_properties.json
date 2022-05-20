@@ -7,9 +7,13 @@
                 "D:\\workspace\\enviroment\\opencv\\opencv\\build\\x64\\MinGW\\install\\include",
                 "D:\\workspace\\enviroment\\opencv\\opencv\\build\\x64\\MinGW\\install\\include\\opencv2"
             ],
-            "defines": [],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
             "compilerPath": "D:\\workspace\\enviroment\\mingw64\\bin\\g++.exe",
-            "intelliSenseMode": "${default}",
+            "intelliSenseMode": "gcc-x64",
             "cStandard": "c11",
             "cppStandard": "c++17"
         }

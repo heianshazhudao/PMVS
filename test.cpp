@@ -1,5 +1,4 @@
 
-#pragma once
 #include"global.hpp"
 #include"ImageSet.hpp"
 
